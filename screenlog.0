@@ -1,0 +1,203 @@
+[01;32mubuntu@tegra-ubuntu[00m:[01;34m~/slurm[00m$ ./s[K[Ksudo ^C
+[01;32mubuntu@tegra-ubuntu[00m:[01;34m~/slurm[00m$ sudo sh lin.[K^C
+[01;32mubuntu@tegra-ubuntu[00m:[01;34m~/slurm[00m$ cd
+[01;32mubuntu@tegra-ubuntu[00m:[01;34m~[00m$ cd em[K[Kmemory_limits/
+[01;32mubuntu@tegra-ubuntu[00m:[01;34m~/memory_limits[00m$ sudo sh linear.sh 
+[sudo] password for ubuntu: 
+slurmctld: slurmctld version 17.11.0-0pre2 started on cluster ubuntu
+slurmctld: layouts: no layout to initialize
+slurmctld: layouts: loading entities/relations information
+slurmctld: Recovered state of 0 reservations
+slurmctld: _preserve_plugins: backup_controller not specified
+slurmctld: Running as primary controller
+slurmctld: No parameter for mcs plugin, default values set
+slurmctld: mcs: MCSParameters = (null). ondemand set.
+slurmd: Message aggregation disabled
+slurmd: slurmd version 17.11.0-0pre2 started
+slurmd: slurmd started on Mon, 09 Oct 2017 12:46:45 +0200
+slurmd: CPUs=4 Boards=1 Sockets=4 Cores=1 Threads=1 Memory=3994 TmpDisk=13983 Uptime=16760 CPUSpecList=(null) FeaturesAvail=(null) FeaturesActive=(null)
+slurmctld: SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=2,partition_job_depth=0,sched_max_job_start=0,sched_min_interval=2
+cg.B.1 300M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=33 NodeList=tegra-ubuntu usec=7284
+slurmd: _run_prolog: run job script took usec=13
+slurmd: _run_prolog: prolog with lock for job 33 ran for 0 seconds
+slurmd: launch task 33.0 request from 0.0@127.0.0.1 (port 51094)
+slurmstepd: error: Exceeded step memory limit at some point.
+srun: error: tegra-ubuntu: task 0: Out Of Memory
+slurmctld: _job_complete: JobID=33 State=0x1 NodeCnt=1 OOM failure
+slurmctld: _job_complete: JobID=33 State=0x800b NodeCnt=1 done
+cg.B.1 200M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=34 NodeList=tegra-ubuntu usec=5939
+slurmd: _run_prolog: run job script took usec=12
+slurmd: _run_prolog: prolog with lock for job 34 ran for 0 seconds
+slurmd: launch task 34.0 request from 0.0@127.0.0.1 (port 54934)
+slurmstepd: error: Exceeded step memory limit at some point.
+srun: error: tegra-ubuntu: task 0: Out Of Memory
+slurmctld: _job_complete: JobID=34 State=0x1 NodeCnt=1 OOM failure
+slurmctld: _job_complete: JobID=34 State=0x800b NodeCnt=1 done
+cg.B.1 100M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=35 NodeList=tegra-ubuntu usec=6217
+slurmd: _run_prolog: run job script took usec=14
+slurmd: _run_prolog: prolog with lock for job 35 ran for 0 seconds
+slurmd: launch task 35.0 request from 0.0@127.0.0.1 (port 58518)
+slurmstepd: error: Exceeded step memory limit at some point.
+srun: error: tegra-ubuntu: task 0: Out Of Memory
+slurmctld: _job_complete: JobID=35 State=0x1 NodeCnt=1 OOM failure
+slurmctld: _job_complete: JobID=35 State=0x800b NodeCnt=1 done
+cg.B.1 400M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=36 NodeList=tegra-ubuntu usec=4789
+slurmd: _run_prolog: run job script took usec=9
+slurmd: _run_prolog: prolog with lock for job 36 ran for 0 seconds
+slurmd: launch task 36.0 request from 0.0@127.0.0.1 (port 62102)
+slurmstepd: error: Exceeded step memory limit at some point.
+srun: error: tegra-ubuntu: task 0: Out Of Memory
+slurmctld: _job_complete: JobID=36 State=0x1 NodeCnt=1 OOM failure
+slurmctld: _job_complete: JobID=36 State=0x800b NodeCnt=1 done
+lu.B.1 300M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=37 NodeList=tegra-ubuntu usec=5247
+slurmd: _run_prolog: run job script took usec=8
+slurmd: _run_prolog: prolog with lock for job 37 ran for 0 seconds
+slurmd: launch task 37.0 request from 0.0@127.0.0.1 (port 151)
+slurmctld: _job_complete: JobID=37 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=37 State=0x8003 NodeCnt=1 done
+lu.B.1 200M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=38 NodeList=tegra-ubuntu usec=5492
+slurmd: _run_prolog: run job script took usec=10
+slurmd: _run_prolog: prolog with lock for job 38 ran for 0 seconds
+slurmd: launch task 38.0 request from 0.0@127.0.0.1 (port 3991)
+slurmctld: _job_complete: JobID=38 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=38 State=0x8003 NodeCnt=1 done
+lu.B.1 100M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=39 NodeList=tegra-ubuntu usec=5655
+slurmd: _run_prolog: run job script took usec=7
+slurmd: _run_prolog: prolog with lock for job 39 ran for 0 seconds
+slurmd: launch task 39.0 request from 0.0@127.0.0.1 (port 7831)
+slurmctld: _job_complete: JobID=39 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=39 State=0x8003 NodeCnt=1 done
+lu.B.1 400M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=40 NodeList=tegra-ubuntu usec=7852
+slurmd: _run_prolog: run job script took usec=11
+slurmd: _run_prolog: prolog with lock for job 40 ran for 0 seconds
+slurmd: launch task 40.0 request from 0.0@127.0.0.1 (port 12183)
+slurmctld: _job_complete: JobID=40 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=40 State=0x8003 NodeCnt=1 done
+ep.B.1 300M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=41 NodeList=tegra-ubuntu usec=9448
+slurmd: _run_prolog: run job script took usec=13
+slurmd: _run_prolog: prolog with lock for job 41 ran for 0 seconds
+slurmd: launch task 41.0 request from 0.0@127.0.0.1 (port 15767)
+slurmctld: _job_complete: JobID=41 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=41 State=0x8003 NodeCnt=1 done
+ep.B.1 200M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=42 NodeList=tegra-ubuntu usec=5405
+slurmd: _run_prolog: run job script took usec=7
+slurmd: _run_prolog: prolog with lock for job 42 ran for 0 seconds
+slurmd: launch task 42.0 request from 0.0@127.0.0.1 (port 19607)
+slurmctld: _job_complete: JobID=42 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=42 State=0x8003 NodeCnt=1 done
+ep.B.1 100M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=43 NodeList=tegra-ubuntu usec=5564
+slurmd: _run_prolog: run job script took usec=7
+slurmd: _run_prolog: prolog with lock for job 43 ran for 0 seconds
+slurmd: launch task 43.0 request from 0.0@127.0.0.1 (port 23191)
+slurmctld: _job_complete: JobID=43 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=43 State=0x8003 NodeCnt=1 done
+ep.B.1 400M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=44 NodeList=tegra-ubuntu usec=7531
+slurmd: _run_prolog: run job script took usec=16
+slurmd: _run_prolog: prolog with lock for job 44 ran for 0 seconds
+slurmd: launch task 44.0 request from 0.0@127.0.0.1 (port 27031)
+slurmctld: _job_complete: JobID=44 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=44 State=0x8003 NodeCnt=1 done
+cg.B.1 300M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=45 NodeList=tegra-ubuntu usec=6988
+slurmd: _run_prolog: run job script took usec=12
+slurmd: _run_prolog: prolog with lock for job 45 ran for 0 seconds
+slurmd: launch task 45.0 request from 0.0@127.0.0.1 (port 30615)
+slurmctld: _job_complete: JobID=45 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=45 State=0x8003 NodeCnt=1 done
+cg.B.1 200M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=46 NodeList=tegra-ubuntu usec=8334
+slurmd: _run_prolog: run job script took usec=8
+slurmd: _run_prolog: prolog with lock for job 46 ran for 0 seconds
+slurmd: launch task 46.0 request from 0.0@127.0.0.1 (port 34967)
+slurmctld: _job_complete: JobID=46 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=46 State=0x8003 NodeCnt=1 done
+cg.B.1 100M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=47 NodeList=tegra-ubuntu usec=8296
+slurmd: _run_prolog: run job script took usec=10
+slurmd: _run_prolog: prolog with lock for job 47 ran for 0 seconds
+slurmd: launch task 47.0 request from 0.0@127.0.0.1 (port 39063)
+slurmstepd: error: Exceeded step memory limit at some point.
+srun: error: tegra-ubuntu: task 0: Out Of Memory
+slurmctld: _job_complete: JobID=47 State=0x1 NodeCnt=1 OOM failure
+slurmctld: _job_complete: JobID=47 State=0x800b NodeCnt=1 done
+cg.B.1 400M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=48 NodeList=tegra-ubuntu usec=5006
+slurmd: _run_prolog: run job script took usec=8
+slurmd: _run_prolog: prolog with lock for job 48 ran for 0 seconds
+slurmd: launch task 48.0 request from 0.0@127.0.0.1 (port 42647)
+slurmctld: _job_complete: JobID=48 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=48 State=0x8003 NodeCnt=1 done
+lu.B.1 300M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=49 NodeList=tegra-ubuntu usec=8696
+slurmd: _run_prolog: run job script took usec=14
+slurmd: _run_prolog: prolog with lock for job 49 ran for 0 seconds
+slurmd: launch task 49.0 request from 0.0@127.0.0.1 (port 46743)
+slurmctld: _job_complete: JobID=49 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=49 State=0x8003 NodeCnt=1 done
+lu.B.1 200M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=50 NodeList=tegra-ubuntu usec=7429
+slurmd: _run_prolog: run job script took usec=7
+slurmd: _run_prolog: prolog with lock for job 50 ran for 0 seconds
+slurmd: launch task 50.0 request from 0.0@127.0.0.1 (port 50583)
+slurmctld: _job_complete: JobID=50 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=50 State=0x8003 NodeCnt=1 done
+lu.B.1 100M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=51 NodeList=tegra-ubuntu usec=8680
+slurmd: _run_prolog: run job script took usec=10
+slurmd: _run_prolog: prolog with lock for job 51 ran for 0 seconds
+slurmd: launch task 51.0 request from 0.0@127.0.0.1 (port 54423)
+slurmctld: _job_complete: JobID=51 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=51 State=0x8003 NodeCnt=1 done
+lu.B.1 400M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=52 NodeList=tegra-ubuntu usec=9716
+slurmd: _run_prolog: run job script took usec=7
+slurmd: _run_prolog: prolog with lock for job 52 ran for 0 seconds
+slurmd: launch task 52.0 request from 0.0@127.0.0.1 (port 58519)
+slurmctld: _job_complete: JobID=52 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=52 State=0x8003 NodeCnt=1 done
+ep.B.1 300M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=53 NodeList=tegra-ubuntu usec=7376
+slurmd: _run_prolog: run job script took usec=8
+slurmd: _run_prolog: prolog with lock for job 53 ran for 0 seconds
+slurmd: launch task 53.0 request from 0.0@127.0.0.1 (port 62359)
+slurmctld: _job_complete: JobID=53 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=53 State=0x8003 NodeCnt=1 done
+ep.B.1 200M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=54 NodeList=tegra-ubuntu usec=8992
+slurmd: _run_prolog: run job script took usec=13
+slurmd: _run_prolog: prolog with lock for job 54 ran for 0 seconds
+slurmd: launch task 54.0 request from 0.0@127.0.0.1 (port 408)
+slurmctld: _job_complete: JobID=54 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=54 State=0x8003 NodeCnt=1 done
+ep.B.1 100M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=55 NodeList=tegra-ubuntu usec=8676
+slurmd: _run_prolog: run job script took usec=11
+slurmd: _run_prolog: prolog with lock for job 55 ran for 0 seconds
+slurmd: launch task 55.0 request from 0.0@127.0.0.1 (port 3992)
+slurmctld: _job_complete: JobID=55 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=55 State=0x8003 NodeCnt=1 done
+ep.B.1 400M
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=56 NodeList=tegra-ubuntu usec=9158
+slurmd: _run_prolog: run job script took usec=7
+slurmd: _run_prolog: prolog with lock for job 56 ran for 0 seconds
+slurmd: launch task 56.0 request from 0.0@127.0.0.1 (port 7832)
+slurmctld: _job_complete: JobID=56 State=0x1 NodeCnt=1 WEXITSTATUS 0
+slurmctld: _job_complete: JobID=56 State=0x8003 NodeCnt=1 done
+slurmctld: Terminate signal (SIGINT or SIGTERM) received
+slurmd: Slurmd shutdown completing
+slurmctld: Saving all slurm state
+slurmctld: layouts: all layouts are now unloaded.
+[01;32mubuntu@tegra-ubuntu[00m:[01;34m~/memory_limits[00m$ sc[K[Kexit
+exit

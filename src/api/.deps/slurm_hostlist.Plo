@@ -1,0 +1,6 @@
+slurm_hostlist.lo: slurm_hostlist.c /usr/include/stdc-predef.h \
+ ../../config.h
+
+/usr/include/stdc-predef.h:
+
+../../config.h:

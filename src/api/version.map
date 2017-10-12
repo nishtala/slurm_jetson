@@ -1,0 +1,7 @@
+{ global:
+   islurm_*;
+   slurm_*;
+   slurmdb_*;
+   plugin_context_*;
+  local: *;
+};
